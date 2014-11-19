@@ -1,5 +1,6 @@
 body, html {
   font-size: 13px;
+  color:#fff;
 }
 
 a {
@@ -18,4 +19,16 @@ a {
 h1 {
   font-size: 6rem;
   margin: 0 0;
+}
+h4 {
+  font-size: 3rem;
+}
+
+.inner {
+  i {
+    font-size: 34px;
+    padding: 4px 10px;
+    fill: #fff;
+    color: #fff;
+  }
 }

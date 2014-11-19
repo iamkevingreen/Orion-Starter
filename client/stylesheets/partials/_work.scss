@@ -59,6 +59,8 @@ button + label{
   margin-left: 1em;
 }
 
+// MIX IT UP STYLES
+
 .mixitup{
   padding: 1% 1% 1%;
   text-align: justify;
@@ -79,6 +81,8 @@ button + label{
   .mix{
     text-align: left;
     background: #03899c;
+    position:relative;
+    padding-top: 20%;
     margin-bottom:1%;
     display: none;
     &.php{
@@ -90,27 +94,32 @@ button + label{
     &.node {
       border-top: 2px solid black;
     }
-    &:after{
-      content: attr(data-myorder);
-      color: white;
-      font-size: 16px;
-      display: inline-block;
-      vertical-align: top;
-      padding: 4% 6%;
-      font-weight: 700;
-    }
-    &:before{
-      content: '';
-      display: inline-block;
-      padding-top: 60%;
-    }
+  }
+}
+
+// INNER CONTENT
+
+.inner {
+  width: 90%;
+  height: 80%;
+  text-align:center;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  .btn {
+    margin: 10px 0 8px;
+  }
+  .tools {
+    padding-top: 16px;
   }
 }
 
 @media all and (min-width: 420px){
   .mixitup .mix,
   .mixitup .gap{
-    width: 32%;
+    width: 100%;
+    padding-top: 45%;
   }
 }
 
@@ -118,7 +127,7 @@ button + label{
 @media all and (min-width: 800px){
   .mixitup .mix,
   .mixitup .gap{
-    width: 25%;
+    width: 49.2%;
   }
 }
 
