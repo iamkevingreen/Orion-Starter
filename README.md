@@ -2,6 +2,16 @@ Orion Starter Site - Meteor
 =================
 
 
+##Disclaimer
+
+*This is not ready for production yet only in the starting phases*
+
+
+
+
+
+
+
 **A Meteor based CMS with Sass & Bower**
 
 ## Setup
