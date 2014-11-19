@@ -34,6 +34,12 @@ orion.dictionary.addDefinition('pinterest', 'social', {
 	optional: true,
 });
 
+orion.dictionary.addDefinition('tumblr', 'social', {
+	type: String,
+	label: "Tumblr",
+	optional: true,
+});
+
 orion.dictionary.addDefinition('linkedin', 'social', {
 	type: String,
 	label: "Linkedin",

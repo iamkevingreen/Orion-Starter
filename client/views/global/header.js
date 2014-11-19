@@ -23,5 +23,8 @@ Template.header.helpers({
   hasDribble: function() {
     return orion.dictionary.get('dribble');
   },
+  hasTumblr: function() {
+    return orion.dictionary.get('tumblr');
+  },
 
 });
