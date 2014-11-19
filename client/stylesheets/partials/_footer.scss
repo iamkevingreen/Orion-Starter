@@ -14,4 +14,13 @@ footer {
       }
     }
   }
+  .github {
+    margin-top: 16px;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration:none;
+      }
+    }
+  }
 }
