@@ -1,0 +1,12 @@
+a {
+  @include transition(all .5s);
+  svg {
+    @include transition(all .5s);
+  }
+  &:hover {
+    @include transition(all .5s);
+    svg {
+      @include transition(all .5s);
+    }
+  }
+}

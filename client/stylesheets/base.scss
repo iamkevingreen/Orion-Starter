@@ -1,3 +1,7 @@
-body {
-  background: #fff;
-}
+
+// bower install components
+@import ".meteor/local/bower/bourbon/dist/bourbon";
+@import ".meteor/local/bower/neat/app/assets/stylesheets/neat";
+
+// include components so we can use mixins
+@import "partials/typography";

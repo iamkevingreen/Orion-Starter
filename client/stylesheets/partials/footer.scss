@@ -1,0 +1,17 @@
+footer {
+  width: 100%;
+  background: #000000;
+  padding: 20px 0;
+  color: #cbcbcb;
+  text-align:center;
+  a {
+    svg {
+      fill: #cbcbcb;
+    }
+    &:hover {
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
