@@ -1,0 +1,26 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+underscore
+fourseven:scss
+mquandalle:bower
+spiderable
+meteorhacks:fast-render
+manuelschoebel:ms-seo
+linto:fontawesome
+markdown
+orionjs:admin
+orionjs:summernote
+iamkevingreen:mixitup
+orionjs:core
+iron:router
+meteorhacks:subs-manager
+orionjs:image-attribute
+aslagle:reactive-table
+aldeed:collection2
+aldeed:simple-schema
+aldeed:autoform
+mrt:bootswatch-yeti

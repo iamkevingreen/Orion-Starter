@@ -1,0 +1,22 @@
+{
+  "name": "foodist",
+  "version": "0.0.1",
+  "homepage": "https://github.com/iamkevingreen/foodist",
+  "authors": [
+    "Kevin Green <kevin@swedenunlimited.com>"
+  ],
+  "description": "an app for finding all the fewds",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "3.0.2",
+    "neat": "~1.7.0",
+    "bourbon": ">=4.0"
+  }
+}

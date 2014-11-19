@@ -1,0 +1,18 @@
+#createEntityForm {
+  .checkbox {
+    width: 30%;
+    float: left;
+    margin-top:4px;
+  }
+  .control-label {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  .form-group {
+    clear: both;
+  }
+  .radio + .radio, .checkbox + .checkbox {
+    margin-top: 4px;
+  }
+}
