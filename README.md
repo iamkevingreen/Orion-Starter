@@ -24,6 +24,10 @@ Run `meteor` in the root to install dependencies and start the server
 
 This Meteor starter site using the [Orion CMS](https://github.com/orionjs/core) to buld a simple portfolio site in using Meteor.
 
+## File Uploads
+
+All uploads are handled by S3 by default, if you want to do it another way you may need to update various aspects of the app. Default settings need to be updated in `server/s3config.js` in order for uploads to function properly.
+
 ## Forms
 
 Using [Aldeeds](https://github.com/aldeed/meteor-autoform) package for creating forms on the fly, please check the extensive documentation there as well as some the examples in the various post types. The package automatically installs the other 2 package dependences which is the simple schema builder and collection2 package which allows you to create schemas in a controller and attach them to a collection so you can validate on postInsert.
