@@ -27,18 +27,28 @@ label{
 
 button{
   display: inline-block;
-  padding: .4em .8em;
-  background: #666;
+  padding: .4em .4em;
+  margin: 0 6px;
+  background: none;
   border: 0;
   color: #ddd;
-  font-size: 16px;
+  font-size: 13px;
+  text-transform:uppercase;
   font-weight: 300;
-  border-radius: 4px;
   cursor: pointer;
+  &.php{
+    border-bottom: 2px solid limegreen;
+  }
+  &.rails{
+    border-bottom: 2px solid yellow;
+  }
+  &.node {
+    border-bottom: 2px solid black;
+  }
 }
 
 button.active{
-  background: #68b8c4;
+  background: #000;
 }
 
 button:focus{
@@ -50,11 +60,10 @@ button + label{
 }
 
 .mixitup{
-  /* padding: 2% 2% 0; */
+  padding: 1% 1% 1%;
   text-align: justify;
   width: 100%;
   font-size: 0.1px;
-  padding: 0 0;
   /* background: #68b8c4; */
 
   -webkit-backface-visibility: hidden;
@@ -70,7 +79,7 @@ button + label{
   .mix{
     text-align: left;
     background: #03899c;
-    /* margin-bottom: 2%; */
+    margin-bottom:1%;
     display: none;
     &.php{
       border-top: 2px solid limegreen;
@@ -110,14 +119,12 @@ button + label{
   .mixitup .mix,
   .mixitup .gap{
     width: 25%;
-    float:left;
   }
 }
 
 @media all and (min-width: 1200px){
   .mixitup .mix,
   .mixitup .gap{
-    width: 33.333333%;
-    float:left;
+    width: 32.6%;
   }
 }
