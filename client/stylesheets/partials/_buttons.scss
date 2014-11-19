@@ -4,12 +4,20 @@
   @include border-right-radius(2px);
   @include border-bottom-radius(2px);
   @include border-left-radius(2px);
-  border: 2px solid;
-  .btn-thin {
+  border: none;
+  border-bottom: 2px solid;
+  &.btn-thin {
     border-color: #fff;
+    padding: 4px 10px;
   }
 }
 
 a.btn {
   color: #fff;
+  &:hover {
+    color: red;
+    &.btn-thin {
+      border-color: red;
+    }
+  }
 }

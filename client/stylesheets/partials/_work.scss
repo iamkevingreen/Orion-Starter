@@ -85,6 +85,14 @@ button + label{
     padding-top: 20%;
     margin-bottom:1%;
     display: none;
+    @include transition(all .5s);
+    &:hover {
+      /* @include transform(scale(1.1)); */
+
+      background: #000;
+      z-index: 1000;
+      @include transition(all .5s);
+    }
     &.php{
       border-top: 2px solid limegreen;
     }

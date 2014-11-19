@@ -1,27 +1,33 @@
 <template name="work">
-<section class="work" name="work">
-  <div class="controls">
-    <label>Filter:</label>
+  <section class="work" name="work">
+    <div class="controls">
+      <label>Filter:</label>
 
-    <button class="filter" data-filter="all">All</button>
-    <button class="filter php" data-filter=".php">PHP</button>
-    <button class="filter node" data-filter=".node">Node</button>
-    <button class="filter rails" data-filter=".rails">Ruby on Rails</button>
+      <button class="filter" data-filter="all">All</button>
+      <button class="filter php" data-filter=".php">PHP</button>
+      <button class="filter node" data-filter=".node">Node</button>
+      <button class="filter rails" data-filter=".rails">Ruby on Rails</button>
+    </div>
+    {{#each works}}
+      {{> workBlock }}
+    {{/each}}
+  </section>
+</template>
 
-  </div>
+<template name="workBlock">
   <div id="work" class="mixitup">
     <div class="mix php wordpress github" data-myorder="1">
       <div class="inner">
         <div class="content">
           <div class="align-center">
-            <h4>TestRocker</h4>
-            <a class="btn btn-thin" href="">Visit Project</a><br />
+            <a href="" class="btn btn-thin"><h4>TestRocker</h4></a>
             <div class="tools">
               <i class="devicon-git-plain-wordmark"></i>
               <i class="devicon-grunt-plain-wordmark"></i>
               <i class="devicon-javascript-plain"></i>
               <i class="devicon-laravel-plain"></i>
               <i class="icon-php-alt"></i>
+              <i class="fa fa-cc-paypal"></i>
               <i class="devicon-mysql-plain"></i>
               <i class="devicon-less-plain-wordmark"></i>
             </div>
@@ -33,13 +39,13 @@
       <div class="inner">
         <div class="content">
           <div class="align-center">
-            <h4>Ellevate</h4>
-            <a class="btn btn-thin" href="">Visit Project</a><br />
+            <a href="" class="btn btn-thin"><h4>Ellevate</h4></a>
             <div class="tools">
               <i class="devicon-git-plain-wordmark"></i>
               <i class="devicon-grunt-plain-wordmark"></i>
               <i class="devicon-javascript-plain"></i>
               <i class="devicon-rails-plain"></i>
+              <i class="fa fa-cc-stripe"></i>
               <i class="devicon-ruby-plain"></i>
               <i class="devicon-postgresql-plain"></i>
               <i class="devicon-sass-original"></i>
@@ -53,9 +59,8 @@
         <div class="inner">
           <div class="content">
             <div class="align-center">
-              <h4>DattoBackup</h4>
-              <a class="btn btn-thin" href="">Visit Project</a><br />
-              <div class="tools">
+              <a href="" class="btn btn-thin"><h4>DattoBackup</h4></a>
+                <div class="tools">
                 <i class="devicon-git-plain-wordmark"></i>
                 <i class="devicon-grunt-plain-wordmark"></i>
                 <i class="devicon-javascript-plain"></i>
@@ -77,5 +82,8 @@
     <div class="gap"></div>
     <div class="gap"></div>
   </div>
-</section>
+</template>
+
+<template name="workItem">
+
 </template>

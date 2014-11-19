@@ -1,12 +1,13 @@
 orion.addEntity('works', {
 	image: {
 		type: orion.attributes.image,
-		label: "Featured Image or specify a color fallback"
+		label: "Featured Image or specify a color fallback",
+		optional: true
 	},
-
 	companyLogo: {
 		type: orion.attributes.image,
-		label: "Upload a company logo if one exist or is of high enough quality (png)"
+		label: "Upload a company logo if one exist or is of high enough quality (png)",
+		optional: true
 	},
 	projectBackground: {
 		type: String,
@@ -35,6 +36,7 @@ orion.addEntity('works', {
 	detailText: {
 		type: String,
 		label: "Detail Text",
+		optional: true,
 		autoform: {
 			type: 'textarea',
 			rows: 10,
@@ -45,14 +47,14 @@ orion.addEntity('works', {
 	// 	label: "Detail Images"
 	// },
   toolsUsed: {
-    type: String,
+    type: [String],
     autoform: {
       type: "select-checkbox",
       options: function () {
         return [
           {label: "GitHub", value: 'github'},
           {label: "Laravel", value: 'laravel'},
-          {label: "Ruby on Rails", value: 'ruby-on-rails'},
+          {label: "Ruby on Rails", value: 'rails'},
           {label: "Heroku", value: 'heroku'},
           {label: "Apache Solr", value: 'apache-solr'},
           {label: "Amazon Web Services", value: 'aws'},
@@ -61,12 +63,13 @@ orion.addEntity('works', {
           {label: "Stripe", value: 'stripe'},
           {label: "Paypal", value: 'paypal'},
           {label: "Drupal", value: 'drupal'},
-          {label: "Ubercart", value: 'ubercart'},
+					{label: "Bower", value: 'bower'},
+					{label: "Bower", value: 'bower'},
           {label: "jQuery", value: 'jquery'},
           {label: "Grunt", value: 'grunt'},
           {label: "Stellar", value: 'stellar'},
           {label: "Meteor", value: 'meteor'},
-          {label: "PhoneGap", value: 'phoneGap'},
+          {label: "PhoneGap", value: 'phonegap'},
           {label: "Wordpress", value: 'wordpress'},
           {label: "Themosis", value: 'themosis'},
           {label: "Python", value: 'python'},
@@ -81,8 +84,9 @@ orion.addEntity('works', {
           {label: "Backbone", value: 'backbone'},
           {label: "Node", value: 'node'},
           {label: "Express", value: 'express'},
-          {label: "MySQL", value: 'mysql'},
-          {label: "Postgres", value: 'postgres'},
+					{label: "MySQL", value: 'mysql'},
+					{label: "Postgres", value: 'postgresql'},
+					{label: "Redis", value: 'redis'},
           {label: "MongoDB", value: 'mongodb'},
           {label: "Angular", value: 'angular'},
           {label: "KeystoneJS", value: 'keystonejs'},
