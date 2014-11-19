@@ -112,12 +112,19 @@ button + label{
   }
   .tools {
     padding-top: 16px;
+    i {
+      padding: 6px 20px;
+      display:inline-block;
+    }
   }
   .content {
     height:100%;
     @include display(flex);
     @include align-items(center);
     @include justify-content(center);
+    .align-center {
+      max-width: 80%;
+    }
   }
 }
 
