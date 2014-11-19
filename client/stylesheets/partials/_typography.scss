@@ -1,3 +1,7 @@
+body, html {
+  font-size: 13px;
+}
+
 a {
   @include transition(all .5s);
   svg {
@@ -9,4 +13,8 @@ a {
       @include transition(all .5s);
     }
   }
+}
+
+h1 {
+  font-size: 6rem;
 }
