@@ -49,7 +49,7 @@ button + label{
   margin-left: 1em;
 }
 
-.container{
+.mixitup{
   /* padding: 2% 2% 0; */
   text-align: justify;
   width: 100%;
@@ -99,24 +99,24 @@ button + label{
 }
 
 @media all and (min-width: 420px){
-  .container .mix,
-  .container .gap{
+  .mixitup .mix,
+  .mixitup .gap{
     width: 32%;
   }
 }
 
 
 @media all and (min-width: 800px){
-  .container .mix,
-  .container .gap{
+  .mixitup .mix,
+  .mixitup .gap{
     width: 25%;
     float:left;
   }
 }
 
 @media all and (min-width: 1200px){
-  .container .mix,
-  .container .gap{
+  .mixitup .mix,
+  .mixitup .gap{
     width: 33.333333%;
     float:left;
   }
