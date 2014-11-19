@@ -16,3 +16,9 @@
     margin-top: 4px;
   }
 }
+
+// Color Style override
+input[type="color"] {
+  max-width: 100px;
+  padding: 2px;
+}

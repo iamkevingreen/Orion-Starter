@@ -1,21 +1,36 @@
 orion.addEntity('works', {
 	image: {
 		type: orion.attributes.image,
-		label: "Image"
+		label: "Featured Image or specify a color fallback"
+	},
+
+	companyLogo: {
+		type: orion.attributes.image,
+		label: "Upload a company logo if one exist or is of high enough quality (png)"
+	},
+	projectBackground: {
+		type: String,
+		label: "Background Color",
+		optional: true,
+		autoform: {
+			type: 'color',
+		}
+	},
+	projectColor: {
+		type: String,
+		label: "Text Color",
+		optional: true,
+		autoform: {
+			type: 'color',
+		}
 	},
   projectName: {
     type: String,
     label: "Project Name",
-    autoform: {
-      type: 'textarea',
-    }
   },
   projectLink: {
     type: String,
     label: "Project Link",
-    autoform: {
-      type: 'textarea',
-    }
   },
 	detailText: {
 		type: String,
@@ -35,45 +50,45 @@ orion.addEntity('works', {
       type: "select-checkbox",
       options: function () {
         return [
-          {label: "GitHub", value: 'GitHub'},
-          {label: "Laravel", value: 'Laravel'},
-          {label: "Ruby on Rails", value: 'Ruby on Rails'},
-          {label: "Heroku", value: 'Heroku'},
-          {label: "Apache Solr", value: 'Apache Solr'},
-          {label: "Amazon Web Services", value: 'AWS'},
-          {label: "PHP", value: 'PHP'},
-          {label: "Javascript", value: 'Javascript'},
-          {label: "Stripe", value: 'Stripe'},
-          {label: "Paypal", value: 'Paypal'},
-          {label: "Drupal", value: 'Drupal'},
-          {label: "Ubercart", value: 'Ubercart'},
-          {label: "jQuery", value: 'jQuery'},
-          {label: "Grunt", value: 'Grunt'},
-          {label: "Stellar", value: 'Stellar'},
-          {label: "Meteor", value: 'Meteor'},
-          {label: "PhoneGap", value: 'PhoneGap'},
-          {label: "Wordpress", value: 'Wordpress'},
-          {label: "Themosis", value: 'Themosis'},
-          {label: "Python", value: 'Python'},
-          {label: "D3", value: 'D3'},
-          {label: "Timber", value: 'Timber'},
-          {label: "Advanced Custom Fields", value: 'ACF'},
-          {label: "Expression Engine", value: 'Expression Engine'},
-          {label: "Shopify", value: 'Shopify'},
-          {label: "Tumblr", value: 'Tumblr'},
-          {label: "BigCommerce", value: 'BigCommerce'},
-          {label: "SASS", value: 'Sass'},
-          {label: "Backbone", value: 'Backbone'},
-          {label: "Node", value: 'Node'},
-          {label: "Express", value: 'Express'},
-          {label: "MySQL", value: 'MySQL'},
-          {label: "Postgres", value: 'Postgres'},
-          {label: "MongoDB", value: 'MongoDB'},
-          {label: "Angular", value: 'Angular'},
-          {label: "KeystoneJS", value: 'KeystoneJS'},
-          {label: "LESS", value: 'LESS'},
-          {label: "Spree", value: 'Spree'},
-          {label: "Gulp", value: 'Gulp'}
+          {label: "GitHub", value: 'github'},
+          {label: "Laravel", value: 'laravel'},
+          {label: "Ruby on Rails", value: 'ruby-on-rails'},
+          {label: "Heroku", value: 'heroku'},
+          {label: "Apache Solr", value: 'apache-solr'},
+          {label: "Amazon Web Services", value: 'aws'},
+          {label: "PHP", value: 'php'},
+          {label: "Javascript", value: 'javascript'},
+          {label: "Stripe", value: 'stripe'},
+          {label: "Paypal", value: 'paypal'},
+          {label: "Drupal", value: 'drupal'},
+          {label: "Ubercart", value: 'ubercart'},
+          {label: "jQuery", value: 'jquery'},
+          {label: "Grunt", value: 'grunt'},
+          {label: "Stellar", value: 'stellar'},
+          {label: "Meteor", value: 'meteor'},
+          {label: "PhoneGap", value: 'phoneGap'},
+          {label: "Wordpress", value: 'wordpress'},
+          {label: "Themosis", value: 'themosis'},
+          {label: "Python", value: 'python'},
+          {label: "D3", value: 'd3'},
+          {label: "Timber", value: 'timber'},
+          {label: "Advanced Custom Fields", value: 'acf'},
+          {label: "Expression Engine", value: 'expression-engine'},
+          {label: "Shopify", value: 'shopify'},
+          {label: "Tumblr", value: 'tumblr'},
+          {label: "BigCommerce", value: 'bigcommerce'},
+          {label: "SASS", value: 'sass'},
+          {label: "Backbone", value: 'backbone'},
+          {label: "Node", value: 'node'},
+          {label: "Express", value: 'express'},
+          {label: "MySQL", value: 'mysql'},
+          {label: "Postgres", value: 'postgres'},
+          {label: "MongoDB", value: 'mongodb'},
+          {label: "Angular", value: 'angular'},
+          {label: "KeystoneJS", value: 'keystonejs'},
+          {label: "LESS", value: 'less'},
+          {label: "Spree", value: 'spree'},
+          {label: "Gulp", value: 'gulp'}
         ];
       }
     }

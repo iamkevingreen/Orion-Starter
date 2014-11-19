@@ -21,3 +21,12 @@ orion.dictionary.addDefinition('headerImage', 'site', {
   label: "Header Fallback Image",
   optional: true,
 });
+
+orion.dictionary.addDefinition('headerBackground', 'site', {
+    type: String,
+    label: "Background Color",
+    optional: true,
+    autoform: {
+      type: 'color',
+    }
+});
