@@ -34,6 +34,7 @@ Using [Aldeeds](https://github.com/aldeed/meteor-autoform) package for creating 
 * [Bourbon mixin library](http://bourbon.io/)
 * [Neat for a grid system](http://neat.bourbon.io/)
 * [SASS support via meteor-scss (meteor package)](https://github.com/fourseven/meteor-scss)
+* [MixItUp (meteor package)](https://github.com/iamkevingreen/mixitup)
 * [bower support via mquandalle (meteor package)](https://github.com/mquandalle/meteor-bower)
 * [s3 upload support via lepozep (meteor package)](https://github.com/Lepozepo/S3/)
 * [Meteor Accounts-UI and Accounts-Password](https://docs.meteor.com/#/basic/accounts)
