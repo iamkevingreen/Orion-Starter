@@ -2,7 +2,7 @@
   <header style="background: {{ dict 'siteBackground' '#CCC' }}">
     <h1>{{ dict 'siteName' 'Orion Starter'}}</h1>
     <ul class="social">
-      <li><i class="fa fa-twitter"></i></li>
+      {{# if hasTwitter }}<li><a href="http://twitter.com/{{ dict 'twitter' }}"><i class="fa fa-twitter"></i></a></li>{{/ if }}
       <li><i class="fa fa-github"></i></li>
       <li><i class="fa fa-linkedin"></i></li>
     </ul>
