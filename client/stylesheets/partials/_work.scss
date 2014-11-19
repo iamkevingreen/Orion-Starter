@@ -100,8 +100,8 @@ button + label{
 // INNER CONTENT
 
 .inner {
-  width: 90%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   text-align:center;
   overflow: auto;
   margin: auto;
@@ -112,6 +112,12 @@ button + label{
   }
   .tools {
     padding-top: 16px;
+  }
+  .content {
+    height:100%;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
   }
 }
 
