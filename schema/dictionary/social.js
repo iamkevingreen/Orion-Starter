@@ -10,6 +10,18 @@ orion.dictionary.addDefinition('facebook', 'social', {
 	optional: true,
 });
 
+orion.dictionary.addDefinition('github', 'social', {
+	type: String,
+	label: "GitHUB",
+	optional: true,
+});
+
+orion.dictionary.addDefinition('dribble', 'social', {
+	type: String,
+	label: "Dribble",
+	optional: true,
+});
+
 orion.dictionary.addDefinition('instagram', 'social', {
 	type: String,
 	label: "Instagram",
