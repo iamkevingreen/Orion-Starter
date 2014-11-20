@@ -32,20 +32,38 @@ Template.workItem.helpers({
         case 'javascript':
           icon += '<i class="devicon-javascript-plain"></i>';
           break;
+        case 'rails':
+          icon += '<i class="devicon-rails-plain"></i>';
+          break;
         case 'laravel':
           icon += '<i class="devicon-laravel-plain"></i>';
+          break;
+        case 'wordpress':
+          icon += '<i class="devicon-wordpress-plain"></i>';
           break;
         case 'php':
           icon += '<i class="icon-php-alt"></i>';
           break;
+        case 'stripe':
+          icon += '<i class="fa fa-cc-stripe"></i>';
+          break;
         case 'paypal':
           icon += '<i class="fa fa-cc-paypal"></i>';
+          break;
+        case 'postgresql':
+          icon += '<i class="devicon-postgresql-plain"></i>';
           break;
         case 'mysql':
           icon += '<i class="devicon-mysql-plain"></i>';
           break;
+        case 'sass':
+          icon += '<i class="devicon-sass-original"></i>';
+          break;
         case 'less':
           icon += '<i class="devicon-less-plain-wordmark"></i>';
+          break;
+        case 'redis':
+          icon += '<i class="icon-redis"></i>';
           break;
       }
     }
