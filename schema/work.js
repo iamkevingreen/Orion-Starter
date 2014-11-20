@@ -65,30 +65,37 @@ orion.addEntity('works', {
 			}
 		}
 	},
+
+	// I am returning values of the font-icons
+	// that I want to pass into my workITem.helper
+	// function, you can tweak this so that it
+	// just returns the name of the language if
+	// you want to use this a different way
+
 	toolsUsed: {
 		type: [String],
 		autoform: {
 			type: "select-checkbox",
 			options: function () {
 				return [
-					{label: "GitHub", value: 'github'},
-					{label: "Laravel", value: 'laravel'},
-					{label: "Ruby on Rails", value: 'rails'},
+					{label: "GitHub", value: 'devicon-git-plain-wordmark'},
+					{label: "Laravel", value: 'devicon-laravel-plain'},
+					{label: "Ruby on Rails", value: 'devicon-rails-plain'},
 					{label: "Heroku", value: 'heroku'},
 					{label: "Apache Solr", value: 'apache-solr'},
 					{label: "Amazon Web Services", value: 'aws'},
-					{label: "PHP", value: 'php'},
-					{label: "Javascript", value: 'javascript'},
-					{label: "Stripe", value: 'stripe'},
-					{label: "Paypal", value: 'paypal'},
-					{label: "Ruby", value: 'ruby'},
+					{label: "PHP", value: 'icon-php-alt'},
+					{label: "Javascript", value: 'devicon-javascript-plain'},
+					{label: "Stripe", value: 'fa fa-cc-stripe'},
+					{label: "Paypal", value: 'fa fa-cc-paypal'},
+					{label: "Ruby", value: 'devicon-ruby-plain'},
 					{label: "Bower", value: 'bower'},
 					{label: "jQuery", value: 'jquery'},
-					{label: "Grunt", value: 'grunt'},
+					{label: "Grunt", value: 'devicon-grunt-plain-wordmark'},
 					{label: "Stellar", value: 'stellar'},
 					{label: "Meteor", value: 'meteor'},
 					{label: "PhoneGap", value: 'phonegap'},
-					{label: "Wordpress", value: 'wordpress'},
+					{label: "Wordpress", value: 'devicon-wordpress-plain'},
 					{label: "Themosis", value: 'themosis'},
 					{label: "Python", value: 'python'},
 					{label: "D3", value: 'd3'},
@@ -98,17 +105,17 @@ orion.addEntity('works', {
 					{label: "Shopify", value: 'shopify'},
 					{label: "Tumblr", value: 'tumblr'},
 					{label: "BigCommerce", value: 'bigcommerce'},
-					{label: "SASS", value: 'sass'},
+					{label: "SASS", value: 'devicon-sass-original'},
 					{label: "Backbone", value: 'backbone'},
 					{label: "Node", value: 'node'},
 					{label: "Express", value: 'express'},
-					{label: "MySQL", value: 'mysql'},
-					{label: "Postgres", value: 'postgresql'},
-					{label: "Redis", value: 'redis'},
+					{label: "MySQL", value: 'devicon-mysql-plain'},
+					{label: "Postgres", value: 'devicon-postgresql-plain'},
+					{label: "Redis", value: 'icon-redis'},
 					{label: "MongoDB", value: 'mongodb'},
 					{label: "Angular", value: 'angular'},
 					{label: "KeystoneJS", value: 'keystonejs'},
-					{label: "LESS", value: 'less'},
+					{label: "LESS", value: 'devicon-less-plain-wordmark'},
 					{label: "Spree", value: 'spree'},
 					{label: "Gulp", value: 'gulp'}
 				];
@@ -119,4 +126,7 @@ orion.addEntity('works', {
 	sidebarName: 'Works',
 	pluralName: 'Works',
 	singularName: 'Work',
+	defaultIndexTableFields: [
+		{key:'projectName', label: 'Project'},
+	]
 });
