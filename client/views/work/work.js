@@ -44,6 +44,9 @@ Template.workItem.helpers({
         case 'php':
           icon += '<i class="icon-php-alt"></i>';
           break;
+        case 'ruby':
+          icon += '<i class="devicon-ruby-plain"></i>';
+          break;
         case 'stripe':
           icon += '<i class="fa fa-cc-stripe"></i>';
           break;
