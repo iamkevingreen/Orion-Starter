@@ -81,7 +81,7 @@ orion.addEntity('works', {
 					{label: "Javascript", value: 'javascript'},
 					{label: "Stripe", value: 'stripe'},
 					{label: "Paypal", value: 'paypal'},
-					{label: "Drupal", value: 'drupal'},
+					{label: "Ruby", value: 'ruby'},
 					{label: "Bower", value: 'bower'},
 					{label: "jQuery", value: 'jquery'},
 					{label: "Grunt", value: 'grunt'},
