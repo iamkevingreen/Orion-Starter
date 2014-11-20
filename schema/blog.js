@@ -14,7 +14,7 @@ orion.addEntity('posts', {
   },
 
 }, {
-  sidebarName: 'Posts',
+  sidebarName: 'Blog',
   pluralName: 'Posts',
   singularName: 'Post',
   defaultIndexTableFields: [
