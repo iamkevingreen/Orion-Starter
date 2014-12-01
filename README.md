@@ -45,13 +45,13 @@ Run `meteor` in the root to install dependencies and start the server
   * ~~ability to post images inline in a blog post~~
   * ability to set published/draft
   * ability to set publish date to the future
-  * blog individual page
+  * ~~blog individual page~~
 * Pages
   * ability to create static pages
   * include images in content block for static pages
 * Contact
-  * contact form
-  * set up mailing to send mail to user
+  * ~~contact form~~
+  * ~~set up mailing to send mail to user~~
 
 ## Based on Orion CMS
 
