@@ -1,10 +1,10 @@
 <template name="postSingle">
   <div class="article">
-    <h2>{{title}}</h2>
+    <h2><a href="{{ pathFor 'post' }}">{{title}}</a></h2>
     <h5 class="date">Posted {{prettifyDate createdAt}}</h5>
     {{{ featured featuredImage.link }}}
     <div class="content">
-      {{{content.content}}}
+    {{{content.content}}}
     </div>
   </div>
 </template>

@@ -41,5 +41,19 @@ Router.map(function() {
   this.route('blog', {
     path: '/blog'
   })
+  this.route('post', {
+    path: '/blog/:_id',
+    layoutTemplate: 'layout',
+    loadingTemplate: 'adminLoading',
+    waitOn: function() {
+      return [orion.subs.subscribe('entity', 'posts', {_id: this.params._id})]
+    },
+    data: function() {
+      return orion.entities.posts.collection.findOne({_id: this.params._id});
+    }
+  })
+  this.route('contact', {
+    path: '/contact'
+  })
 
 });

@@ -68,6 +68,7 @@ mquandalle:bower@0.1.11
 mrt:bootswatch-yeti@0.3.8
 mrt:moment@2.6.0
 natestrauser:font-awesome@4.2.0
+nicolaslopezj:contactform@1.0.1
 nicolaslopezj:summernote@0.1.0
 npm-bcrypt@0.7.7
 observe-sequence@1.0.3
@@ -81,6 +82,7 @@ reactive-dict@1.0.4
 reactive-var@1.0.3
 reload@1.1.1
 retry@1.0.1
+rgoomar:bootstrap-validator@0.5.2
 routepolicy@1.0.2
 service-configuration@1.0.2
 session@1.0.4

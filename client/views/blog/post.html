@@ -1,0 +1,13 @@
+<template name="post">
+  <section class="posts" name="posts">
+		<a href="{{ pathFor 'blog' }}">Back</a>
+    <div class="article">
+      <h2><a href="{{ pathFor 'post' }}">{{title}}</a></h2>
+      <h5 class="date">Posted {{prettifyDate createdAt}}</h5>
+      {{{ featured featuredImage.link }}}
+      <div class="content">
+      {{{content.content}}}
+      </div>
+    </div>
+  </section>
+</template>
