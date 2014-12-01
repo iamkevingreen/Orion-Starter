@@ -10,9 +10,12 @@ Template.posts.helpers({
 Template.postSingle.helpers({
   featured: function(image) {
     imageSrc = '';
-    if (image.length) {
-      imageSrc = '<img src="' + image + '" alt="" />';
+    if (image) {
+      imageSrc = '<div class="image-wrapper"><img src="' + image + '" alt="" /></div>';
     }
     return imageSrc;
+  },
+  prettifyDate: function(timestamp) {
+      return moment(new Date(timestamp)).fromNow();
   }
 })
