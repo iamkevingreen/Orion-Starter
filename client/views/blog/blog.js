@@ -9,10 +9,10 @@ Template.posts.helpers({
 
 Template.postSingle.helpers({
   featured: function(image) {
-    var imageSrc = "";
-    // if (image != "") {
-    //   imageSrc = '<img src="'. image . '" alt="" />';
-    // }
-    return image;
+    imageSrc = '';
+    if (image.length) {
+      imageSrc = '<img src="' + image + '" alt="" />';
+    }
+    return imageSrc;
   }
 })
