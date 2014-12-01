@@ -1,7 +1,7 @@
 Router.configure({
   loadingTemplate: 'adminLoading',
   waitOn: function() {
-    return [orion.subs.subscribe('dictionary'), orion.subs.subscribe('entity', 'works')];
+    return [orion.subs.subscribe('dictionary'), orion.subs.subscribe('entity', 'works'), orion.subs.subscribe('entity', 'posts')];
   }
 });
 
@@ -38,6 +38,8 @@ Router.map(function() {
   this.route('work', {
     path: '/work'
   })
-
+  this.route('blog', {
+    path: '/blog'
+  })
 
 });
