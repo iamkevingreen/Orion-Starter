@@ -6,3 +6,13 @@ Template.posts.helpers({
       return orion.entities.posts.collection.find().fetch();
     }
 });
+
+Template.postSingle.helpers({
+  featured: function(image) {
+    var imageSrc = "";
+    // if (image != "") {
+    //   imageSrc = '<img src="'. image . '" alt="" />';
+    // }
+    return image;
+  }
+})
