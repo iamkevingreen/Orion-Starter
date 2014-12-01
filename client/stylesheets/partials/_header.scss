@@ -1,3 +1,10 @@
 header {
   text-align: center;
+  min-height: 500px;
+  .centered-v {
+    margin: auto;
+    position: absolute;
+    height: 110px;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
 }

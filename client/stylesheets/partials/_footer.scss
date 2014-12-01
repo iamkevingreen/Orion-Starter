@@ -23,4 +23,18 @@ footer {
       }
     }
   }
+  nav {
+    font-size: 11px;
+    ul {
+      margin: 0 0;
+      padding: 0 0;
+    }
+    li {
+      list-style-type: none;
+      margin: 0 0;
+      padding: 8px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
 }

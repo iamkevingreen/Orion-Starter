@@ -1,16 +1,18 @@
 <template name="header">
   <header style="background: {{ dict 'headerBackground' '#CCC' }}">
-    <h1>{{ dict 'siteName' 'Orion Starter'}}</h1>
-    <ul class="social">
-      {{# if hasTwitter }}<li><a href="http://twitter.com/{{ dict 'twitter' }}"><i class="fa fa-twitter"></i></a></li>{{/ if }}
-      {{# if hasGithub }}<li><a href="http://github.com/{{ dict 'github' }}"><i class="fa fa-github"></i></a></li>{{/ if }}
-      {{# if hasLinkedin }}<li><a href="http://linkedin.com/{{ dict 'linkedin' }}"><i class="fa fa-linkedin"></i></a></li>{{/ if }}
-      {{# if hasInsta }}<li><a href="http://instagram.com/{{ dict 'instagram' }}"><i class="fa fa-instagram"></i></a></li>{{/ if }}
-      {{# if hasFacebook }}<li><a href="http://facebook.com/{{ dict 'facebook' }}"><i class="fa fa-facebook"></i></a></li>{{/ if }}
-      {{# if hasPinterest }}<li><a href="http://pinterest.com/{{ dict 'pinterest' }}"><i class="fa fa-pinterest"></i></a></li>{{/ if }}
-      {{# if hasTumblr }}<li><a href="{{ dict 'tumblr' }}"><i class="fa fa-tumblr"></i></a></li>{{/ if }}
-      {{# if hasDribble }}<li><a href="http://dribble.com/{{ dict 'dribble' }}"><i class="fa fa-dribble"></i></a></li>{{/ if }}
-      {{# if hasEmail }}<li><a href="mailto:{{ dict 'email' }}"><i class="fa fa-envelope-o"></i></a></li>{{/ if }}
-    </ul>
+    <div class="centered-v">
+      <h1>{{ dict 'siteName' 'Orion Starter'}}</h1>
+      <ul class="social">
+        {{# if hasTwitter }}<li><a href="http://twitter.com/{{ dict 'twitter' }}"><i class="fa fa-twitter"></i></a></li>{{/ if }}
+        {{# if hasGithub }}<li><a href="http://github.com/{{ dict 'github' }}"><i class="fa fa-github"></i></a></li>{{/ if }}
+        {{# if hasLinkedin }}<li><a href="http://linkedin.com/{{ dict 'linkedin' }}"><i class="fa fa-linkedin"></i></a></li>{{/ if }}
+        {{# if hasInsta }}<li><a href="http://instagram.com/{{ dict 'instagram' }}"><i class="fa fa-instagram"></i></a></li>{{/ if }}
+        {{# if hasFacebook }}<li><a href="http://facebook.com/{{ dict 'facebook' }}"><i class="fa fa-facebook"></i></a></li>{{/ if }}
+        {{# if hasPinterest }}<li><a href="http://pinterest.com/{{ dict 'pinterest' }}"><i class="fa fa-pinterest"></i></a></li>{{/ if }}
+        {{# if hasTumblr }}<li><a href="{{ dict 'tumblr' }}"><i class="fa fa-tumblr"></i></a></li>{{/ if }}
+        {{# if hasDribble }}<li><a href="http://dribble.com/{{ dict 'dribble' }}"><i class="fa fa-dribble"></i></a></li>{{/ if }}
+        {{# if hasEmail }}<li><a href="mailto:{{ dict 'email' }}"><i class="fa fa-envelope-o"></i></a></li>{{/ if }}
+      </ul>
+    </div>
   </header>
 </template>
