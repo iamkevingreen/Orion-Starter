@@ -1,8 +1,8 @@
 <template name="postSingle">
   <div class="article">
-    {{{ featured featuredImage.link }}}
     <h2>{{title}}</h2>
-    <h5>Posted {{prettifyDate createdAt}}</h5>
+    <h5 class="date">Posted {{prettifyDate createdAt}}</h5>
+    {{{ featured featuredImage.link }}}
     <div class="content">
       {{{content.content}}}
     </div>
