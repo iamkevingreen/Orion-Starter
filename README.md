@@ -19,10 +19,9 @@ Run `meteor` in the root to install dependencies and start the server
 ## Roadmap
 
 * Overall
-  * clean urls
-  * dynamically generate footer links
+  * ~~clean urls~~
   * ~~dynamically generate header~~
-  * header background image/color background options
+  * ~~header background image/color background options~~
   * ~~dynamically generate social icons~~
   * ~~s3 integration~~
   * simple styling
@@ -55,7 +54,7 @@ Run `meteor` in the root to install dependencies and start the server
 
 ## Based on Orion CMS
 
-This Meteor starter site using the [Orion CMS](https://github.com/orionjs/core) to buld a simple portfolio site in using Meteor.
+This Meteor starter site using the [Orion CMS](https://github.com/orionjs/core) to build a simple portfolio site in using Meteor.
 
 ## File Uploads
 
