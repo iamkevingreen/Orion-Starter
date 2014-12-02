@@ -8,9 +8,10 @@ Router.configure({
 
 Router.map(function() {
 
+  // Site index
+
   this.route('base', {
     path: '/',
-    loadingTemplate: 'adminLoading',
     fastRender: true,
     onAfterAction: function() {
       var dict;
@@ -35,16 +36,30 @@ Router.map(function() {
     }
   });
 
+  // Work/portfolio routes
+
   this.route('work', {
     path: '/work'
   })
+  this.route('/workSingle', {
+    path: '/work/:slug',
+    layoutTemplate: 'layout',
+    waitOn: function() {
+      return [orion.subs.subscribe('entity', 'works', {slug: this.params.slug})]
+    },
+    data: function() {
+      return orion.entities.posts.collection.findOne({slug: this.params.slug});
+    }
+  })
+
+  // Blog and individual blog posts
+
   this.route('blog', {
     path: '/blog'
   })
   this.route('post', {
     path: '/blog/:slug',
     layoutTemplate: 'layout',
-    loadingTemplate: 'adminLoading',
     waitOn: function() {
       return [orion.subs.subscribe('entity', 'posts', {slug: this.params.slug})]
     },
@@ -52,6 +67,9 @@ Router.map(function() {
       return orion.entities.posts.collection.findOne({slug: this.params.slug});
     }
   })
+
+  // Contact Form
+
   this.route('contact', {
     path: '/contact'
   })
