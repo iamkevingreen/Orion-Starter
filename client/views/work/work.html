@@ -8,24 +8,18 @@
       <button class="filter node" data-filter=".node">Node</button>
       <button class="filter rails" data-filter=".rails">Ruby on Rails</button>
     </div>
-    {{#each works}}
-      {{> workBlock }}
-    {{/each}}
+    <div id="work" class="mixitup">
+      {{#each works}}
+        {{> workBlock }}
+      {{/each}}
+
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
   </section>
 </template>
 
 <template name="workBlock">
-  <div id="work" class="mixitup">
-    {{#each row}}
-      {{> workItem}}
-    {{/each}}
-
-    <div class="gap"></div>
-    <div class="gap"></div>
-  </div>
-</template>
-
-<template name="workItem">
   <div class="mix php wordpress github" data-myorder="1">
     <div class="inner">
       <div class="content">
@@ -38,4 +32,5 @@
       </div>
     </div>
   </div>
+
 </template>

@@ -48,7 +48,7 @@ Router.map(function() {
       return [orion.subs.subscribe('entity', 'works', {slug: this.params.slug})]
     },
     data: function() {
-      return orion.entities.posts.collection.findOne({slug: this.params.slug});
+      return orion.entities.works.collection.findOne({slug: this.params.slug});
     }
   })
 
