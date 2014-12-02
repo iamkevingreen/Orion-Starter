@@ -42,14 +42,14 @@ Router.map(function() {
     path: '/blog'
   })
   this.route('post', {
-    path: '/blog/:_id',
+    path: '/blog/:slug',
     layoutTemplate: 'layout',
     loadingTemplate: 'adminLoading',
     waitOn: function() {
-      return [orion.subs.subscribe('entity', 'posts', {_id: this.params._id})]
+      return [orion.subs.subscribe('entity', 'posts', {slug: this.params.slug})]
     },
     data: function() {
-      return orion.entities.posts.collection.findOne({_id: this.params._id});
+      return orion.entities.posts.collection.findOne({slug: this.params.slug});
     }
   })
   this.route('contact', {
