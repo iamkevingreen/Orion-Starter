@@ -51,6 +51,9 @@ Run `meteor` in the root to install dependencies and start the server
 * Contact
   * ~~contact form~~
   * ~~set up mailing to send mail to user~~
+* File Upload
+  * create multiple resolutions on file upload
+  * load in correct file sizes depending on situation
 
 ## Based on Orion CMS
 
