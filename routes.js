@@ -33,13 +33,15 @@ Router.map(function() {
           'image': dict.seoImage.link
         }
       });
+
     }
   });
 
   // Work/portfolio routes
 
   this.route('work', {
-    path: '/work'
+    path: '/work',
+    fastRender: true,
   })
   this.route('/workSingle', {
     path: '/work/:slug',
@@ -55,7 +57,8 @@ Router.map(function() {
   // Blog and individual blog posts
 
   this.route('blog', {
-    path: '/blog'
+    path: '/blog',
+    fastRender: true,
   })
   this.route('post', {
     path: '/blog/:slug',

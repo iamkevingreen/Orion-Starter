@@ -1,6 +1,6 @@
 Template.work.helpers({
     works: function () {
-        return orion.entities.works.collection.find().fetch();
+      return orion.entities.works.collection.find().fetch();
     }
 });
 
