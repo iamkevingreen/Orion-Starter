@@ -71,6 +71,18 @@ Router.map(function() {
     }
   })
 
+  // General Pages
+  this.route('page', {
+    path: ':/slug',
+    layoutTemplate: 'layout',
+    waitOn: function() {
+      return [orion.subs.subscribe('entity', 'pages', {slug: this.params.slug})]
+    },
+    data: function() {
+      return orion.entities.pages.collection.findOne({slug: this.params.slug});
+    }
+  })
+
   // Contact Form
 
   this.route('contact', {

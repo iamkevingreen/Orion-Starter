@@ -5,7 +5,8 @@ orion.addEntity('pages', {
   },
   slug: {
     type: String,
-    label: "Page Slug"
+    label: "Page Slug",
+    optional: true
   },
   content: {
     type: orion.attributes.summernote,

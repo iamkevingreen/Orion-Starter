@@ -5,5 +5,6 @@ Template.adminEntitiesCreate.events({
     str = str.toLowerCase();
     str = str.replace(/\s/g,'-');
     $('input[name="slug"]').val(str);
+    console.log('yo');
   }
 });

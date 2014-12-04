@@ -18,7 +18,6 @@ iamkevingreen:mixitup
 orionjs:core
 iron:router
 meteorhacks:subs-manager
-orionjs:image-attribute
 aslagle:reactive-table
 aldeed:collection2
 aldeed:simple-schema
@@ -30,3 +29,9 @@ email
 meteorhacks:kadira
 orionjs:filesystem
 orionjs:s3
+meteorhacks:npm
+
+
+npm-container
+orionjs:image-attribute
+
