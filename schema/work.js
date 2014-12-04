@@ -29,6 +29,11 @@ orion.addEntity('works', {
     type: String,
     label: "Project Name",
   },
+	slug: {
+		type: String,
+		label: "Slug",
+		optional: true
+	},
   projectLink: {
     type: String,
     label: "Project Link",

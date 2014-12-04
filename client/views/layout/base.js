@@ -5,10 +5,8 @@ Template.base.rendered = function() {
     $('#work').mixItUp({
       callbacks: {
         onMixEnd: function(state) {
-          console.log(state);
         },
         onMixFail: function(state) {
-          console.log(state);
         }
       }
     });
@@ -17,8 +15,4 @@ Template.base.rendered = function() {
 }
 Template.base.destroyed = function() {
   $('#work').mixItUp('destroy', true);
-}
-
-Template.base.helpers = function() {
-  console.log('test');
 }

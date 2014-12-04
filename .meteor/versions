@@ -74,12 +74,12 @@ natestrauser:font-awesome@4.2.0
 npm-bcrypt@0.7.7
 observe-sequence@1.0.3
 ordered-dict@1.0.1
-orionjs:admin@0.1.2
+orionjs:admin@0.1.3
 orionjs:core@0.0.6
-orionjs:filesystem@0.0.5
-orionjs:image-attribute@0.1.2
-orionjs:s3@0.0.6
-orionjs:summernote@0.1.4
+orionjs:filesystem@0.0.6
+orionjs:image-attribute@0.1.3
+orionjs:s3@0.0.7
+orionjs:summernote@0.1.5
 random@1.0.1
 reactive-dict@1.0.4
 reactive-var@1.0.3

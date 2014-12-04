@@ -15,6 +15,9 @@
   .radio + .radio, .checkbox + .checkbox {
     margin-top: 4px;
   }
+  input[name="slug"] {
+    display: none;
+  }
 }
 
 // Color Style override

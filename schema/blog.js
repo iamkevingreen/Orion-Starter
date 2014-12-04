@@ -10,7 +10,8 @@ orion.addEntity('posts', {
   },
   slug: {
     type: String,
-    label: "Post Slug"
+    label: "Post Slug",
+    optional: true
   },
   content: {
     type: orion.attributes.summernote,

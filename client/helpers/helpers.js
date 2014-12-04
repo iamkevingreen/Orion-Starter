@@ -6,6 +6,7 @@ UI.registerHelper('featured', function(image) {
   }
   return imageSrc;
 })
+
 UI.registerHelper('prettifyDate', function(timestamp) {
   return moment(new Date(timestamp)).fromNow();
 })
