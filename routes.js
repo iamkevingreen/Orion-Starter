@@ -1,7 +1,7 @@
 Router.configure({
   loadingTemplate: 'adminLoading',
   waitOn: function() {
-    return [orion.subs.subscribe('dictionary'), orion.subs.subscribe('entity', 'works'), orion.subs.subscribe('entity', 'posts')];
+    return [orion.subs.subscribe('dictionary'), orion.subs.subscribe('entity', 'works'), orion.subs.subscribe('entity', 'posts'), orion.subs.subscribe('entity', 'pages')];
   }
 });
 
