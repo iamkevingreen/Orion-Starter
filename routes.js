@@ -73,7 +73,7 @@ Router.map(function() {
 
   // General Pages
   this.route('page', {
-    path: ':/slug',
+    path: ':slug',
     layoutTemplate: 'layout',
     waitOn: function() {
       return [orion.subs.subscribe('entity', 'pages', {slug: this.params.slug})]
