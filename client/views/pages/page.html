@@ -1,0 +1,11 @@
+<template name="page">
+  <section class="posts" name="posts">
+    <div class="article">
+      <h2>{{title}}</h2>
+      <h5 class="date">{{prettifyDate createdAt}}</h5>
+      <div class="content">
+      {{{content.content}}}
+      </div>
+    </div>
+  </section>
+</template>
