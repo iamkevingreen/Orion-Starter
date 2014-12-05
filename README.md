@@ -32,7 +32,7 @@ Run `meteor` in the root to install dependencies and start the server
   * ~~able to create work content type~~
   * ~~work is displayed on the index~~
   * ~~work has icons for categorizing (not needed for everyone)~~
-  * individual landing pages
+  * ~~individual landing pages~~
   * extended case study like content
   * dynamically create the filters
   * only feature a few on index and have a landing page with all of them
@@ -46,8 +46,8 @@ Run `meteor` in the root to install dependencies and start the server
   * ability to set publish date to the future
   * ~~blog individual page~~
 * Pages
-  * ability to create static pages
-  * include images in content block for static pages
+  * ~~ability to create static pages~~
+  * ~~include images in content block for static pages~~
 * Contact
   * ~~contact form~~
   * ~~set up mailing to send mail to user~~
