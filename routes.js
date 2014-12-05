@@ -84,7 +84,7 @@ Router.map(function() {
       var response = this.response;
       console.log(response);
       if (page == undefined) {
-        this.redirect('base');
+        // this.redirect('base');
         return null;
       }
       return orion.entities.pages.collection.findOne({slug: this.params.slug});
@@ -98,3 +98,7 @@ Router.map(function() {
   })
 
 });
+
+// Handle 404s properly
+
+Router.plugin('dataNotFound', {notFoundTemplate: 'notFound'});
