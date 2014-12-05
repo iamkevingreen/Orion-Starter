@@ -4,11 +4,14 @@ body, html {
 }
 
 a {
+  color: #606060;
   @include transition(all .5s);
   svg {
     @include transition(all .5s);
   }
   &:hover {
+    color: #d33333;
+    text-decoration:none;
     @include transition(all .5s);
     svg {
       @include transition(all .5s);
