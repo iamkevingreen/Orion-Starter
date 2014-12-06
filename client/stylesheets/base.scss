@@ -4,12 +4,14 @@
 @import ".meteor/local/bower/neat/app/assets/stylesheets/neat";
 
 // include components so we can use mixins
+@import "partials/variables";
 @import "partials/typography";
 @import "partials/icons";
 @import "partials/global";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/work";
+@import "partials/form";
 @import "partials/posts";
 @import "partials/contact";
 @import "partials/buttons";

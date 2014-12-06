@@ -12,8 +12,8 @@ Meteor.methods({
     this.unblock();
 
     message = {
-      from: contactFormConfig.settings.emailFrom,
-      to: contactFormConfig.settings.fullName + ' <' + contactFormConfig.settings.emailTo + '>',
+      from: doc.email,
+      to: "kevin@districtdomain.com",
       replyTo: doc.email,
       subject: "Website Contact Form - Message From " + doc.name,
       text: text

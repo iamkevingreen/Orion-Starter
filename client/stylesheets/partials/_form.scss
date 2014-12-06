@@ -1,0 +1,29 @@
+input.form-control, textarea.form-control {
+  background: $greyBackground;
+  border: none;
+  border-bottom: 1px solid $greyBorder;
+  &:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.5);
+  }
+}
+.btn {
+  &:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: none;
+  }
+}
+.form-group {
+  label {
+    display: block;
+    margin-bottom: 6px;
+    padding-left: 2px;
+  }
+}
+#contactForm p {
+  margin-bottom: 40px;
+  max-width: 360px;
+}

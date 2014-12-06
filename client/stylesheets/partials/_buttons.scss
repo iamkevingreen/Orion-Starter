@@ -6,9 +6,23 @@
   @include border-left-radius(2px);
   border: none;
   border-bottom: 2px solid;
+  font-size: .9rem;
+  margin: 0 8px 0 0;
+  outline: none;
+  @include transition(all .5s);
+  &:hover {
+    @include transition(all .5s);
+  }
   &.btn-thin {
     border-color: #fff;
     padding: 4px 10px;
+  }
+  &.btn-primary {
+    background: $greyBackground;
+    border-color: $greyBorder;
+    &:hover {
+      border-color: rgba(255,255,255,.6);
+    }
   }
 }
 

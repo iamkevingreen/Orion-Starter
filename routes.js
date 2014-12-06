@@ -55,6 +55,13 @@ Router.map(function() {
     }
   })
 
+
+  // Contact Form
+
+  this.route('contact', {
+    path: '/contact'
+  })
+
   // Blog and individual blog posts
 
   this.route('blog', {
@@ -89,12 +96,6 @@ Router.map(function() {
       }
       return orion.entities.pages.collection.findOne({slug: this.params.slug});
     }
-  })
-
-  // Contact Form
-
-  this.route('contact', {
-    path: '/contact'
   })
 
 });
