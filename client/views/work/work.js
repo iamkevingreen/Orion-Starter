@@ -19,4 +19,8 @@ Template.workBlock.helpers({
     }
     return classes;
   }
-})
+});
+
+Template.workSingle.rendered = function() {
+  $('header').addClass('small');
+};

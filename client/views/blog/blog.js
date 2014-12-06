@@ -3,3 +3,11 @@ Template.posts.helpers({
       return orion.entities.posts.collection.find().fetch();
     }
 });
+
+Template.postSingle.rendered = function() {
+  $('header').addClass('small');
+};
+
+Template.posts.rendered = function() {
+  $('header').addClass('small');
+};

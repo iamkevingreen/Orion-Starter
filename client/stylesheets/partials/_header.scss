@@ -2,6 +2,7 @@ header {
   text-align: center;
   min-height: 500px;
   position: relative;
+  @include transition(all .5s);
   .centered-v {
     margin: auto;
     position: absolute;
@@ -12,5 +13,21 @@ header {
     color: #343434;
     max-width: 430px;
     margin: 0 auto;
+  }
+  &.small {
+    h1 {
+      font-size: 2rem;
+    }
+    .social {
+      margin-top: 2px;
+      i {
+        font-size: 1.3rem;
+      }
+    }
+    @include transition(all .5s);
+    min-height: 120px;
+    h5 {
+      display: none;
+    }
   }
 }

@@ -3,3 +3,7 @@ Template.contactForm.helpers({
     return Schema.contact;
   }
 });
+
+Template.contactForm.rendered = function() {
+  $('header').addClass('small');
+};
