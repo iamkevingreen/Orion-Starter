@@ -34,8 +34,8 @@ Run `meteor` in the root to install dependencies and start the server
   * ~~work has icons for categorizing (not needed for everyone)~~
   * ~~individual landing pages~~
   * extended case study like content
-  * dynamically create the filters
-  * only feature a few on index and have a landing page with all of them
+  * ~~dynamically create the filters (removed)~~
+  * ~~only feature a few on index and have a landing page with all of them~~
   * background images
 * Blog
   * ~~blog landing page~~
