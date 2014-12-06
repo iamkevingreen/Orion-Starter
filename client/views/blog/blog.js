@@ -8,6 +8,10 @@ Template.postSingle.rendered = function() {
   $('header').addClass('small');
 };
 
+Template.post.rendered = function() {
+  $('header').addClass('small');
+};
+
 Template.posts.rendered = function() {
   $('header').addClass('small');
 };

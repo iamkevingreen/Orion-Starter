@@ -5,13 +5,6 @@ Template.work.helpers({
 });
 
 Template.workBlock.helpers({
-  icons: function (tools) {
-    var icon = '';
-    for (var i = 0; i < tools.length; i++) {
-      icon += '<i class="' + tools[i] + '"></i>';
-    }
-    return icon;
-  },
   tools: function (tools) {
     var classes = '';
     for (var i = 0; i < tools.length; i++) {
@@ -20,6 +13,16 @@ Template.workBlock.helpers({
     return classes;
   }
 });
+
+Template.workSingle.helpers({
+    icons: function (tools) {
+      var icon = '';
+      for (var i = 0; i < tools.length; i++) {
+        icon += '<i class="' + tools[i] + '"></i>';
+      }
+      return icon;
+    }
+})
 
 Template.workSingle.rendered = function() {
   $('header').addClass('small');

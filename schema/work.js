@@ -44,13 +44,9 @@ orion.addEntity('works', {
 		optional: true
   },
 	detailText: {
-		type: String,
+		type: orion.attributes.summernote,
 		label: "Detail Text",
 		optional: true,
-		autoform: {
-			type: 'textarea',
-			rows: 10,
-		}
 	},
 	// detailImages: {
 	// 	type: [orion.attributes.image],
