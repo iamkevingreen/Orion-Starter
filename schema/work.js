@@ -34,9 +34,14 @@ orion.addEntity('works', {
 		label: "Slug",
 		optional: true
 	},
+	projectRole: {
+		type: String,
+		label: "Project Role"
+	},
   projectLink: {
     type: String,
     label: "Project Link",
+		optional: true
   },
 	detailText: {
 		type: String,

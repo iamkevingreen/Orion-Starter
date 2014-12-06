@@ -11,5 +11,12 @@ Template.workBlock.helpers({
       icon += '<i class="' + tools[i] + '"></i>';
     }
     return icon;
+  },
+  tools: function (tools) {
+    var classes = '';
+    for (var i = 0; i < tools.length; i++) {
+      classes += tools[i] + ' ';
+    }
+    return classes;
   }
 })

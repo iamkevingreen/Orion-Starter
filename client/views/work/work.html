@@ -1,13 +1,13 @@
 <template name="work">
   <section class="work" name="work">
-    <div class="controls">
+    <!-- <div class="controls">
       <label>Filter:</label>
 
       <button class="filter" data-filter="all">All</button>
-      <button class="filter php" data-filter=".php">PHP</button>
+      <button class="filter php" data-filter=".php"><i class="icon-php-alt"></i></button>
       <button class="filter node" data-filter=".node">Node</button>
-      <button class="filter rails" data-filter=".rails">Ruby on Rails</button>
-    </div>
+      <button class="filter rails" data-filter=".rails"><i class="devicon-rails-plain"></i></button>
+    </div> -->
     <div id="work" class="mixitup">
       {{#each works}}
         {{> workBlock }}
@@ -20,13 +20,14 @@
 </template>
 
 <template name="workBlock">
-  <div class="mix php wordpress github" data-myorder="1">
+  <div class="mix {{ tools languesUsed }}">
     <div class="inner">
       <div class="content">
         <div class="align-center">
           <a href="{{ pathFor 'workSingle' }}" class="btn btn-thin"><h2>{{{projectName}}}</h2></a>
+          <h5>{{projectRole}}</h5>
           <div class="tools">
-            {{{ icons toolsUsed }}}
+            <!-- {{{ icons toolsUsed }}} -->
           </div>
         </div>
       </div>
