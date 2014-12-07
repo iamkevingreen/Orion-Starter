@@ -1,8 +1,11 @@
 section.posts {
   padding: 40px 20px;
-  max-width: 700px;
+  max-width: $contentWidth;
   margin: 0 auto;
   text-align: center;
+  img {
+    width: 100% !important;
+  }
   .content {
     text-align: left;
     padding: 20px 0 40px;

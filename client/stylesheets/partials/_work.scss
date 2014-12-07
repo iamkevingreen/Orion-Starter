@@ -14,16 +14,6 @@
   box-sizing: border-box;
 }
 
-body, button{
-  font-family: 'Helvetica Neue', arial, sans-serif;
-}
-
-.controls{
-  padding: 2%;
-  // background: #333;
-  color: #eee;
-}
-
 label{
   font-weight: 300;
   margin: 0 .4em 0 0;
@@ -145,6 +135,53 @@ button + label{
   }
 }
 
+.work-single {
+  .tools {
+    font-size: 2rem;
+    i {
+      padding: 4px;
+    }
+  }
+}
+
+.content-wrap {
+  border-top: 20px solid #241f1f;
+  @include border-top-radius(3px);
+  position: relative;
+  opacity: .7;
+  .controls {
+    top: -12px;
+    left: 16px;
+    z-index: 10;
+    height: 5px;
+    width: 5px;
+    @include border-top-radius(3px);
+    @include border-bottom-radius(3px);
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    &:before {
+      content: '';
+      height: 5px;
+      width: 5px;
+      @include border-top-radius(3px);
+      @include border-bottom-radius(3px);
+      background: #fff;
+      position: absolute;
+      left: -10px;
+    }
+    &:after {
+      content: '';
+      height: 5px;
+      width: 5px;
+      @include border-top-radius(3px);
+      @include border-bottom-radius(3px);
+      background: #fff;
+      position: absolute;
+      left: 10px;
+    }
+  }
+}
 
 @media all and (min-width: 800px){
   .mixitup .mix,

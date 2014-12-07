@@ -1,6 +1,6 @@
 <template name="workSingle">
   <section class="posts work-single" name="work">
-    <a href="{{ pathFor 'blog' }}">Back</a>
+    <a href="{{ pathFor 'base' }}">Back</a>
     <div class="article">
       <h2>{{projectName}}</h2>
       <h5>{{projectRole}}</h5>
@@ -9,6 +9,9 @@
       </div>
       <div class="content">
       {{{detailText.content}}}
+      </div>
+      <div class="link">
+        <a class="btn" href="{{projectLink}}">View Project</a>
       </div>
     </div>
   </section>
