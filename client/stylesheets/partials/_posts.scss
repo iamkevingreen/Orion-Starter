@@ -1,14 +1,17 @@
 section.posts {
-  padding: 40px 20px;
-  max-width: $contentWidth;
+  padding: 40px 0px;
+  /* max-width: \$contentWidth; */
   margin: 0 auto;
   text-align: center;
   img {
-    width: 100% !important;
+    max-width: 100% !important;
   }
   .content {
     text-align: left;
     padding: 20px 0 40px;
+
+    max-width: $contentWidth;
+    margin: 0 auto;
   }
   .date {
     font-style: italic;
@@ -17,5 +20,38 @@ section.posts {
 .article {
   .image-wrapper {
     padding: 20px 0;
+  }
+}
+
+.featured-image {
+  position:relative;
+  min-height: 60px;
+  h2 {
+      width: 100%;
+      line-height: 1.4;
+      height: auto;
+      text-align:center;
+      overflow: auto;
+      z-index: 10;
+      margin: auto;
+      position: absolute;
+      margin-top: -20px;
+      top: 50%; left: 0; right: 0;
+      a {
+        color: #fff;
+        &:hover {
+          color: $linkHover;
+        }
+      }
+  }
+  img {
+    @include transition(opacity .5s);
+    opacity: .4;
+  }
+  &:hover {
+    img {
+      @include transition(opacity .5s);
+      opacity: .7;
+    }
   }
 }

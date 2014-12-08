@@ -13,7 +13,7 @@ Meteor.methods({
 
     message = {
       from: doc.email,
-      to: "kevin@districtdomain.com",
+      to: contactFormConfig.settings.emailTo,
       replyTo: doc.email,
       subject: "Website Contact Form - Message From " + doc.name,
       text: text
