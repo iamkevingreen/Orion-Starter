@@ -1,3 +1,7 @@
-// contactFormConfig.settings.emailFrom = 'name@mane.com';
-// contactFormConfig.settings.emailTo = 'name@mane.com';
-// contactFormConfig.settings.fullName = 'name';
+// contactFormConfig = {
+//   settings: {
+//     fullName: 'name@email.com',
+//     emailTo: 'name@email.com',
+//     emailFrom: 'Name'
+//   }
+// };
