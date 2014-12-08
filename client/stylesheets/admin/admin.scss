@@ -15,8 +15,8 @@
   .radio + .radio, .checkbox + .checkbox {
     margin-top: 4px;
   }
-  input[name="slug"] {
-    display: none;
+  input[name="slug"]  {
+    background: rgba(0,0,0,.3);
   }
 }
 

@@ -10,7 +10,7 @@ a {
     @include transition(all .5s);
   }
   &:hover {
-    color: #d33333;
+    color: $linkHover;
     text-decoration:none;
     @include transition(all .5s);
     svg {
