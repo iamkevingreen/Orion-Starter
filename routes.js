@@ -26,7 +26,8 @@ Router.map(function() {
           icon: dict.seoFavIcon.link,
         },
         meta: {
-          'description': dict.seoDescription
+          'description': dict.seoDescription,
+          'google-site-verfication': 'emtVgpY0f-I3HzlMAVkYLTb4uJsSJWfWRKW9b2QgFTk'
         },
         og: {
           'title': dict.seoTitle,
