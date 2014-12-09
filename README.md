@@ -36,6 +36,8 @@ Run `meteor` in the root to install dependencies and start the server
 
 Currently the app is working with Modulus, I intend on experimenting with Digital Ocean and writing up anything that needs to be stated regarding setting this up.
 
+[Deployment Tutorial](Deployment with modulus and CodeShip)
+
 ## Based on Orion CMS
 
 This Meteor starter site using the [Orion CMS](https://github.com/orionjs/core) to build a simple portfolio site in using Meteor.
