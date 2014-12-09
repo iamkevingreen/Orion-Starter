@@ -1,6 +1,18 @@
 #work {
   .mix{
     display: none;
+    overflow: hidden;
+  }
+  .featured-image {
+      position:absolute;
+      left: 0;
+      top: 0;
+      z-index:0;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
   }
 }
 
@@ -86,16 +98,29 @@ button + label{
     text-align: left;
     background: rgba(22,24,24,.6);
     position:relative;
-    opacity: .7;
+    opacity: 1;
     display: none;
     @include transition(all .5s);
     border-bottom: 2px solid $greyBackground;
+    .overlay {
+      background: rgba(0,0,0,.8);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      @include transition(all .5s);
+    }
     &:hover {
       /* @include transform(scale(1.1)); */
       opacity: .9;
       background: #000;
       z-index: 1000;
       @include transition(all .5s);
+      .overlay {
+        background: rgba(0,0,0,.3);
+        @include transition(all .5s);
+      }
     }
   }
 }
@@ -106,6 +131,8 @@ button + label{
   width: 100%;
   height: 100%;
   text-align:center;
+  position: relative;
+  z-index: 10;
   overflow: auto;
   margin: auto;
   .btn {

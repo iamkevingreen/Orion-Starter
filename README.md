@@ -1,6 +1,4 @@
 # Orion Portfolio Starter - Meteor [ ![Codeship Status for iamkevingreen/orion-starter](https://codeship.com/projects/2a31afa0-620c-0132-3655-7ece8ab0c7e7/status)](https://codeship.com/projects/51977)
-=================
-
 
 ##Disclaimer
 
