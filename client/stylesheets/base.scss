@@ -1,7 +1,7 @@
 
 // bower install components
-@import "bower/bourbon/dist/bourbon";
-@import "bower/neat/app/assets/stylesheets/neat";
+@import ".meteor/local/bower/bourbon/dist/bourbon";
+@import ".meteor/local/bower/neat/app/assets/stylesheets/neat";
 
 // include components so we can use mixins
 @import "partials/variables";
