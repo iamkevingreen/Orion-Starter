@@ -5,9 +5,9 @@ Meteor.methods({
 
     // Build the e-mail text
     var text = "Name: " + doc.name + "\n\n"
-            + "Email: " + doc.email + "\n\n\n\n"
-            + "Website: " + doc.website + "\n\n"
-            + doc.message;
+    + "Email: " + doc.email + "\n\n\n\n"
+    + "Website: " + doc.website + "\n\n"
+    + doc.message;
 
     this.unblock();
 

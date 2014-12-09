@@ -1,7 +1,7 @@
 Template.adminEntitiesCreate.events({
   'click .btn': function(e) {
     str = $('input[name="title"]').val();
-    if (str == undefined) {
+    if (str === undefined) {
       str = $('input[name="projectName"]').val();
     }
     str = str.replace(/[^a-zA-Z0-9\s]/g,"");
@@ -13,4 +13,4 @@ Template.adminEntitiesCreate.events({
 
 Template.adminEntitiesCreate.rendered = function() {
   $('input[name="slug"]').parent().hide();
-}
+};
