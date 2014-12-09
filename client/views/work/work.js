@@ -22,10 +22,10 @@ Template.workSingle.helpers({
       }
       return icon;
     }
-})
+});
 
 Template.workSingle.rendered = function() {
   $('header').addClass('small');
   $('.content img').wrap( "<div class='content-wrap'></div>");
-  $('.content-wrap').prepend("<div class='controls'></div>")
+  $('.content-wrap').prepend("<div class='controls'></div>");
 };

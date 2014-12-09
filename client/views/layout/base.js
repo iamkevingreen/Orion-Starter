@@ -1,5 +1,4 @@
 Template.base.rendered = function() {
-  this.autorun;
   if (!this.rendered){
     // run my code
     $('#work').mixItUp();
