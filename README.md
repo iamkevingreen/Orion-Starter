@@ -10,21 +10,21 @@
 
 ## Before Starting
 
-Navigate to `server/fixture-default.js` duplicate and name to `server/fixtures.js` to change the default admin settings to whatever you want for the initial user
+Navigate to `server/fixtures.js` to change the default admin settings to whatever you want for the initial user
 
 ### Additional Configuration
 
 #### Kadira
 
-Navigate to `server/kadira-default.js` if you wish to use kadira and duplicate to `server/kadira` and enter in your unique creds which can be generated on [Kadira](https://kadira.io/)
+Navigate to `server/kadira.js` and enter in your unique creds which can be generated on [Kadira](https://kadira.io/)
 
 #### S3 Uploads
 
-All uploads are handled by S3 by default, if you want to do it another way you may need to update various aspects of the app. Default settings need to be updated in `server/s3config-default.js` in order for uploads to function properly.
+All uploads are handled by S3 by default, if you want to do it another way you may need to update various aspects of the app. Default settings need to be updated in `server/s3config.js` in order for uploads to function properly.
 
 #### Contact Form
 
-Duplicate the `server\contact-default.js` file to `server\contact.js` and configure your sepcific email settings. Also be sure to set a `process.env.MAIL_URL` variable in either your production server or in the `contact.js` file in order to send email.
+Update `server\contact.js` and configure your sepcific email settings. Also be sure to set a `process.env.MAIL_URL` variable in either your production server or in the `contact.js` file in order to send email.
 
 ## Start the App
 
