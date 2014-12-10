@@ -1,3 +1,0 @@
-/*
-Kadira.connect('APIID', 'APISecret')
-*/
