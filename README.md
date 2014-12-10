@@ -12,6 +12,10 @@
 
 Navigate to `server/fixtures.js` to change the default admin settings to whatever you want for the initial user
 
+#### Working Locally
+
+If you are working locally and do not wish to use things like Kadira/S3 please comment them out, otherwise you'll need to create an `env.js` file where you store your local environment variables.
+
 ### Additional Configuration
 
 #### Kadira
