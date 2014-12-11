@@ -73,7 +73,7 @@ Router.map(function() {
     onAfterAction: function() {
       dict = orion.dictionary.collection.findOne();
       contact = 'Contact Us';
-      if (dict.contactTitle != undefined) {
+      if (dict.contactTitle !== undefined) {
         contact = dict.contactTitle;
       }
       SEO.set({
