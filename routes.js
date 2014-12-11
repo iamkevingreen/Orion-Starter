@@ -53,6 +53,14 @@ Router.map(function() {
     },
     data: function() {
       return orion.entities.works.collection.findOne({slug: this.params.slug});
+    },
+    onAfterAction: function() {
+      post = orion.entities.works.collection.findOne({slug: this.params.slug});
+      dict = orion.dictionary.collection.findOne();
+      title = post.projectName + ' | ' + dict.seoTitle;
+      SEO.set({
+        title: title,
+      });
     }
   });
 
@@ -60,7 +68,18 @@ Router.map(function() {
   // Contact Form
 
   this.route('contact', {
-    path: '/contact'
+    path: '/contact',
+
+    onAfterAction: function() {
+      dict = orion.dictionary.collection.findOne();
+      contact = 'Contact Us';
+      if (dict.contactTitle != undefined) {
+        contact = dict.contactTitle;
+      }
+      SEO.set({
+        title: contact + ' | ' + dict.seoTitle,
+      });
+    }
   });
 
   // Blog and individual blog posts
@@ -68,6 +87,12 @@ Router.map(function() {
   this.route('blog', {
     path: '/blog',
     fastRender: true,
+    onAfterAction: function() {
+      dict = orion.dictionary.collection.findOne();
+      SEO.set({
+        title: 'Blog | ' + dict.seoTitle,
+      });
+    }
   });
   this.route('post', {
     path: '/blog/:slug',
@@ -77,6 +102,14 @@ Router.map(function() {
     },
     data: function() {
       return orion.entities.posts.collection.findOne({slug: this.params.slug});
+    },
+    onAfterAction: function() {
+      post = orion.entities.posts.collection.findOne({slug: this.params.slug});
+      dict = orion.dictionary.collection.findOne();
+      title = post.title + ' | ' + dict.seoTitle;
+      SEO.set({
+        title: title,
+      });
     }
   });
 
@@ -96,6 +129,14 @@ Router.map(function() {
         return null;
       }
       return orion.entities.pages.collection.findOne({slug: this.params.slug});
+    },
+    onAfterAction: function() {
+      post = orion.entities.pages.collection.findOne({slug: this.params.slug});
+      dict = orion.dictionary.collection.findOne();
+      title = page.title + ' | ' + dict.seoTitle;
+      SEO.set({
+        title: title,
+      });
     }
   });
 
