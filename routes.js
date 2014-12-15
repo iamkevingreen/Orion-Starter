@@ -6,7 +6,6 @@ Router.configure({
   }
 });
 
-
 Router.map(function() {
 
   // Site index
