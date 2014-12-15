@@ -30,10 +30,8 @@ meteorhacks:kadira
 orionjs:filesystem
 orionjs:s3
 meteorhacks:npm
-
-
 npm-container
 orionjs:image-attribute
 matteodem:easy-search
 alethes:pages
-
+gadicohen:phantomjs
