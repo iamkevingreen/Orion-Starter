@@ -2,5 +2,7 @@
 
 Pages = new Meteor.Pagination(orion.entities.posts.collection, {
   itemTemplate: 'postSingle',
-  perPage: 6
+  perPage: 6,
+  navShowFirst: false,
+  navShowLast: false
 });

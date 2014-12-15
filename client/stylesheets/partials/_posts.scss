@@ -55,3 +55,34 @@ section.posts {
     }
   }
 }
+
+// Pagination overrides
+
+.pagination {
+  li {
+    &.disabled {
+      display: none;
+    }
+    a {
+      margin: 6px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid;
+      border-radius: 0px;
+    }
+    &.active {
+      a {
+        background-color: transparent;
+        border-color: $linkHover;
+        color: $linkHover;
+        &:hover {
+          background-color: $linkHover;
+          border-color: $linkHover;
+        }
+      }
+    }
+    &:last-child > a {
+      border-radius: 0px;
+    }
+  }
+}
