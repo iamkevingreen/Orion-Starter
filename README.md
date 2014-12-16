@@ -1,5 +1,7 @@
 # Orion Portfolio Starter - Meteor [ ![Codeship Status for iamkevingreen/orion-starter](https://codeship.com/projects/2a31afa0-620c-0132-3655-7ece8ab0c7e7/status)](https://codeship.com/projects/51977)
 
+[![Code Climate](https://codeclimate.com/github/iamkevingreen/Orion-Starter/badges/gpa.svg)](https://codeclimate.com/github/iamkevingreen/Orion-Starter)
+
 ##Disclaimer
 
 *Not all of the fields in the backend are configured to be functional on the front-end, the additional fields are meant to be a guide*
