@@ -1,1 +1,1 @@
-prerenderio.set('prerenderToken', process.env.PRE_RENDER));
+prerenderio.set('prerenderToken', process.env.PRE_RENDER);
