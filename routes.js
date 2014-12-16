@@ -1,6 +1,7 @@
 Router.configure({
   loadingTemplate: 'adminLoading',
   notFoundTemplate: 'notFound',
+  fastRender: true,
   waitOn: function() {
     return [orion.subs.subscribe('dictionary'), orion.subs.subscribe('entity', 'works'), orion.subs.subscribe('entity', 'posts'), orion.subs.subscribe('entity', 'pages')];
   }
@@ -47,6 +48,7 @@ Router.map(function() {
   this.route('/workSingle', {
     path: '/work/:slug',
     layoutTemplate: 'layout',
+    fastRender: true,
     waitOn: function() {
       return [orion.subs.subscribe('entity', 'works', {slug: this.params.slug})];
     },
@@ -68,7 +70,7 @@ Router.map(function() {
 
   this.route('contact', {
     path: '/contact',
-
+    fastRender: true,
     onAfterAction: function() {
       dict = orion.dictionary.collection.findOne();
       contact = 'Contact Us';
@@ -96,6 +98,7 @@ Router.map(function() {
   this.route('post', {
     path: '/blog/:slug',
     layoutTemplate: 'layout',
+    fastRender: true,
     waitOn: function() {
       return [orion.subs.subscribe('entity', 'posts', {slug: this.params.slug})];
     },
@@ -116,6 +119,7 @@ Router.map(function() {
   this.route('page', {
     path: ':slug',
     layoutTemplate: 'layout',
+    fastRender: true,
     waitOn: function() {
       return [orion.subs.subscribe('entity', 'pages', {slug: this.params.slug})];
     },

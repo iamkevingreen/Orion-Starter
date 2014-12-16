@@ -24,12 +24,12 @@ ctl@1.0.2
 dburles:collection-helpers@1.0.1
 ddp@1.0.12
 deps@1.0.5
+dfischer:prerenderio@1.0.5
 ejson@1.0.4
 email@1.0.4
 fastclick@1.0.1
 follower-livedata@1.0.2
 fourseven:scss@1.0.0
-gadicohen:phantomjs@0.0.2
 geojson-utils@1.0.1
 html-tools@1.0.2
 htmljs@1.0.2
@@ -98,7 +98,6 @@ sha@1.0.1
 softwarerero:accounts-t9n@1.0.2
 spacebars-compiler@1.0.3
 spacebars@1.0.3
-spiderable@1.0.5
 srp@1.0.1
 standard-app-packages@1.0.3
 summernote:standalone@0.6.0

@@ -7,7 +7,6 @@ meteor-platform
 underscore
 fourseven:scss
 mquandalle:bower
-spiderable
 meteorhacks:fast-render
 manuelschoebel:ms-seo
 linto:fontawesome
@@ -34,4 +33,5 @@ npm-container
 orionjs:image-attribute
 matteodem:easy-search
 alethes:pages
-gadicohen:phantomjs
+dfischer:prerenderio
+
