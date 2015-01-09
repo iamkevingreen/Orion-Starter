@@ -35,6 +35,7 @@ Router.map(function() {
           'image': dict.seoImage.link
         }
       });
+      GAnalytics.pageview();
 
     }
   });
@@ -62,6 +63,7 @@ Router.map(function() {
       SEO.set({
         title: title,
       });
+      GAnalytics.pageview();
     }
   });
 
@@ -80,6 +82,7 @@ Router.map(function() {
       SEO.set({
         title: contact + ' | ' + dict.seoTitle,
       });
+      GAnalytics.pageview();
     }
   });
 
@@ -93,6 +96,7 @@ Router.map(function() {
       SEO.set({
         title: 'Blog | ' + dict.seoTitle,
       });
+      GAnalytics.pageview();
     }
   });
   this.route('post', {
@@ -112,6 +116,7 @@ Router.map(function() {
       SEO.set({
         title: title,
       });
+      GAnalytics.pageview();
     }
   });
 
@@ -140,6 +145,7 @@ Router.map(function() {
       SEO.set({
         title: title,
       });
+      GAnalytics.pageview();
     }
   });
 
