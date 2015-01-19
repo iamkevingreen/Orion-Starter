@@ -4,6 +4,11 @@
 # but you can also edit it by hand.
 
 meteor-platform
+orionjs:core
+orionjs:summernote
+orionjs:filesystem
+orionjs:s3
+orionjs:file-attribute
 underscore
 fourseven:scss
 mquandalle:bower
@@ -11,10 +16,7 @@ meteorhacks:fast-render
 manuelschoebel:ms-seo
 linto:fontawesome
 markdown
-orionjs:admin
-orionjs:summernote
 iamkevingreen:mixitup
-orionjs:core
 iron:router
 meteorhacks:subs-manager
 aslagle:reactive-table
@@ -26,13 +28,9 @@ ccosming:font-mfizz
 mrt:bootswatch-yeti
 email
 meteorhacks:kadira
-orionjs:filesystem
-orionjs:s3
 meteorhacks:npm
 npm-container
-orionjs:image-attribute
 matteodem:easy-search
 alethes:pages
 dfischer:prerenderio
-
 datariot:ganalytics

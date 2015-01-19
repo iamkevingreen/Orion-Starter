@@ -1,7 +1,7 @@
 contactFormConfig = {
   settings: {
-    fullName: process.env.MAIL_NAME,
-    emailTo: process.env.MAIL_EMAILTO,
-    emailFrom: process.env.MAIL_EMAILFROM
+    fullName: orion.config.get('MAIL_NAME', ''),
+    emailTo: orion.config.get('MAIL_EMAILTO', ''),
+    emailFrom: orion.config.get('MAIL_EMAILFROM', ''),
   }
 };
