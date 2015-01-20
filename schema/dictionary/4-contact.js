@@ -4,8 +4,9 @@ orion.dictionary.addDefinition('contactTitle', 'contact', {
   optional: true,
 });
 
-orion.dictionary.addDefinition('contactContent', 'contact', {
-  type: orion.attributes.summernote,
-  label: "Additional content above the contact form",
-  optional: true,
-});
+orion.dictionary.addDefinition('contactContent', 'contact',
+  orion.attribute('summernote', {
+    label: "Additional content above the contact form",
+    optional: true,
+  })
+);

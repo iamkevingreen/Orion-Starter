@@ -12,5 +12,5 @@ Template.adminEntitiesCreate.events({
 });
 
 Template.adminEntitiesCreate.rendered = function() {
-  $('input[name="slug"]').parent().hide();
+  $('input[name="slug"]').parent().parent().hide();
 };

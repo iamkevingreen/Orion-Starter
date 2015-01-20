@@ -1,9 +1,8 @@
 orion.addEntity('posts', {
-  featuredImage: {
-    type: orion.attributes.image,
+  featuredImage: orion.attribute('file',{
     label: "Featured Image",
     optional: true
-  },
+  }),
   title: {
     type: String,
     label: "Post Title",
@@ -13,10 +12,9 @@ orion.addEntity('posts', {
     label: "Post Slug",
     optional: true
   },
-  content: {
-    type: orion.attributes.summernote,
+  content: orion.attribute('summernote', {
     label: "Content",
-  },
+  }),
 
 }, {
   sidebarName: 'Blog',

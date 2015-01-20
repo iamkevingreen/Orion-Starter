@@ -10,7 +10,6 @@ orionjs:filesystem
 orionjs:s3
 orionjs:file-attribute
 underscore
-fourseven:scss
 mquandalle:bower
 meteorhacks:fast-render
 manuelschoebel:ms-seo
@@ -34,3 +33,5 @@ matteodem:easy-search
 alethes:pages
 dfischer:prerenderio
 datariot:ganalytics
+iamkevingreen:orionjs-sass-styles
+fourseven:scss@1.0.0

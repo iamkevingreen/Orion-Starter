@@ -13,14 +13,16 @@ orion.dictionary.addDefinition('seoDescription', 'seo', {
 	}
 });
 
-orion.dictionary.addDefinition('seoImage', 'seo', {
-	type: orion.attributes.image,
-	label: "Open Graph Image",
-	optional: true,
-});
+orion.dictionary.addDefinition('seoImage', 'seo',
+	orion.attribute('file', {
+		label: "Open Graph Image",
+		optional: true,
+	})
+);
 
-orion.dictionary.addDefinition('seoFavIcon', 'seo', {
-	type: orion.attributes.image,
-	label: "Fav Icon",
-	optional: true,
-});
+orion.dictionary.addDefinition('seoFavIcon', 'seo',
+	orion.attribute('file', {
+		label: "Fav Icon",
+		optional: true,
+	})
+);

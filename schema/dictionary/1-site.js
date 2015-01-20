@@ -16,11 +16,12 @@ orion.dictionary.addDefinition('videoURL', 'site', {
   optional: true,
 });
 
-orion.dictionary.addDefinition('headerImage', 'site', {
-  type: orion.attributes.image,
-  label: "Header Fallback Image",
-  optional: true,
-});
+orion.dictionary.addDefinition('headerImage', 'site',
+  orion.attribute('file', {
+    label: "Header Fallback Image",
+    optional: true
+  }),
+);
 
 orion.dictionary.addDefinition('headerBackground', 'site', {
     type: String,

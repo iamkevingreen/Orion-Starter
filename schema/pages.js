@@ -8,10 +8,9 @@ orion.addEntity('pages', {
     label: "Page Slug",
     optional: true
   },
-  content: {
-    type: orion.attributes.summernote,
+  content: orion.attribute('summernote',{
     label: "Content",
-  },
+  }),
 
 }, {
   sidebarName: 'Page',

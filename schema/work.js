@@ -1,14 +1,12 @@
 orion.addEntity('works', {
-	image: {
-		type: orion.attributes.image,
+	image: orion.attribute('file',{
 		label: "Featured Image or specify a color fallback",
 		optional: true
-	},
-	companyLogo: {
-		type: orion.attributes.image,
+	}),
+	companyLogo: orion.attribute('file',{
 		label: "Upload a company logo if one exist or is of high enough quality (png)",
 		optional: true
-	},
+	}),
 	projectBackground: {
 		type: String,
 		label: "Background Color",
@@ -43,11 +41,10 @@ orion.addEntity('works', {
     label: "Project Link",
 		optional: true
   },
-	detailText: {
-		type: orion.attributes.summernote,
+	detailText: orion.attribute('summernote',{
 		label: "Detail Text",
 		optional: true,
-	},
+	}),
 	// detailImages: {
 	// 	type: [orion.attributes.image],
 	// 	label: "Detail Images"
