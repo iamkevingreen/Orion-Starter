@@ -20,7 +20,7 @@ orion.dictionary.addDefinition('headerImage', 'site',
   orion.attribute('file', {
     label: "Header Fallback Image",
     optional: true
-  }),
+  })
 );
 
 orion.dictionary.addDefinition('headerBackground', 'site', {
