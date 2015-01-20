@@ -14,7 +14,7 @@
 
 #### Kadira
 
-Navigate to `server/kadira.js` and enter in your unique creds which can be generated on [Kadira](https://kadira.io/)
+Navigate to `/admin/config/kadira` and enter in your unique creds which can be generated on [Kadira](https://kadira.io/)
 
 #### S3 Uploads
 
@@ -22,7 +22,7 @@ Handled in the admin now under your admin user account settings
 
 #### Contact Form
 
-Update `server\contact.js` and configure your sepcific email settings. Also be sure to set a `process.env.MAIL_URL` variable in either your production server or in the `contact.js` file in order to send email.
+Navigate to `/admin/config/contact` and configure your sepcific email settings. Also be sure to set a `process.env.MAIL_URL` variable in either your production server or in the `contact.js` file in order to send email.
 
 ## Start the App
 
@@ -30,7 +30,7 @@ Run `meteor` in the root to install dependencies and start the server
 
 ### Create an Admin user
 
-`localhost:3000/admin/setup` after starting the app to create an admin user
+`/admin/setup` after starting the app to create an admin user
 
 ## Deployment
 

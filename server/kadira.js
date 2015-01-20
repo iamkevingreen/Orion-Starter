@@ -1,1 +1,1 @@
-Kadira.connect(process.env.KAD_APPID, process.env.KAD_APISECRET);
+Kadira.connect(orion.config.get('KAD_APPID', 'none'), orion.config.get('KAD_APISECRET', 'none'));
