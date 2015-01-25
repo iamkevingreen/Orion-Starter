@@ -118,7 +118,7 @@ orion.addEntity('works', {
 	sidebarName: 'Works',
 	pluralName: 'Works',
 	singularName: 'Work',
-	defaultIndexTableFields: [
-		{key:'projectName', label: 'Project'},
+	tableColumns: [
+		{data:'projectName', title: 'Project'},
 	]
 });

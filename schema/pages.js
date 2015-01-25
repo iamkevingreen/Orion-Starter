@@ -16,7 +16,7 @@ orion.addEntity('pages', {
   sidebarName: 'Page',
   pluralName: 'Pages',
   singularName: 'Page',
-  defaultIndexTableFields: [
-    {key:'title', label: 'Title'},
+  tableColumns: [
+    {data:'title', title: 'Title'},
   ]
 });

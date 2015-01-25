@@ -6,3 +6,9 @@ section.contact {
 .contact-header {
   margin-bottom: 40px;
 }
+#contactForm {
+  fieldset {
+    background:none;
+    border: none;
+  }
+}
