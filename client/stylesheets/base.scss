@@ -1,7 +1,29 @@
 
+@mixin border-top-radius($x) {
+  border-top-radius: $x;
+  -webkit-border-top-radius: $x;
+  -moz-border-top-radius: $x;
+}
+@mixin border-bottom-radius($x) {
+  border-bottom-radius: $x;
+  -webkit-border-bottom-radius: $x;
+  -moz-border-bottom-radius: $x;
+}
+@mixin border-right-radius($x) {
+  border-right-radius: $x;
+  -webkit-border-right-radius: $x;
+  -moz-border-right-radius: $x;
+}
+@mixin border-left-radius($x) {
+  border-left-radius: $x;
+  -webkit-border-left-radius: $x;
+  -moz-border-left-radius: $x;
+}
+
 // Fix for bower isses
 @import "mixins/bourbon-mix";
 
+// @import ".meteor/local/bower/bourbon/app/assets/stylesheets/bourbon";
 @import ".meteor/local/bower/neat/app/assets/stylesheets/neat";
 
 

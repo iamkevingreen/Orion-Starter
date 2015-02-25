@@ -24,12 +24,12 @@ datariot:ganalytics@0.2.1
 dburles:collection-helpers@1.0.2
 ddp@1.0.14
 deps@1.0.6
-dfischer:prerenderio@1.0.5
 ejson@1.0.5
 email@1.0.5
 fastclick@1.0.2
 follower-livedata@1.0.3
 fourseven:scss@1.0.0
+gadicohen:phantomjs@0.0.2
 geojson-utils@1.0.2
 html-tools@1.0.3
 htmljs@1.0.3
@@ -101,6 +101,7 @@ sha@1.0.2
 softwarerero:accounts-t9n@1.0.4
 spacebars@1.0.5
 spacebars-compiler@1.0.4
+spiderable@1.0.6
 srp@1.0.2
 summernote:standalone@0.6.0
 templating@1.0.11
